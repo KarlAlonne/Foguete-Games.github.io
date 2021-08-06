@@ -9,16 +9,39 @@
     <title>Foguete Games</title>
 </head>
 <body>
+    <header>
+        <nav>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="home.html"><img src=".\img\Home.png"onmouseover="this.src='./img/Home on.png'"
+                onmouseout="this.src='./img/Home.png'"></a></a></li>
+            <li> <a href="contato.html"><img src=".\img\contact.png"onmouseover="this.src='./img/contact on.png'"
+                onmouseout="this.src='./img/contact.png'"></a></li>
+            <li> <a href="download.html"><img src=".\img\Download.png"onmouseover="this.src='./img/Download on.png'"
+                onmouseout="this.src='./img/Download.png'"></a></li>
+            <li><a href="about.html"><img src=".\img\about.png"onmouseover="this.src='./img/about on.png'"
+                onmouseout="this.src='./img/about.png'"></a></li>
+          </ul>
+        </nav>
+      </header>
+      <main></main>
+    <br>
     <br>
     <div class="container">  
         <form action="https://formspree.io/f/xyylkjzq"method="POST">
-           <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required />  
+           <input type="text" class="form-contact-input" name="nome" placeholder="Name" required />  
            <input type="email" class="form-contact-input" name="email" placeholder="Email" required />  
-           <input type="tel" class="form-contact-input" name="tel" placeholder="Telefone" />  
-           <textarea class="form-contact-textarea" name="conteudo" placeholder="Deixe uma mensagem" required></textarea>  
+           <input type="tel" class="form-contact-input" name="tel" placeholder="Telephone" />  
+           <textarea class="form-contact-textarea" name="conteudo" placeholder="Leave a message" required></textarea>  
            <button type="submit" class="form-contact-button">Enviar</button>  
         </form>
-    
-    <footer> <i>Francisco Wesley and Karl Lenin </i> </footer>
+        <center>
+    <footer> <i>Foguete-Games Copyright © 2021 Francisco Wesley and Karl Lenin </i> </footer>
+        </center>
+        <script src="js\mobile-navbar.js"></script>
 </body>
 </html>
