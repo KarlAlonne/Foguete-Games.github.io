@@ -192,3 +192,35 @@ body{
               font-family: 'PixelOperator', Times, serif;
               color: rgb(104, 103, 103);
             }
+            .control {
+              margin-left: 18%;
+              margin-right: 60px;
+              max-width: 75%;
+              height:499px;
+              background-image: url('../img/tt.png');
+              background-repeat: no-repeat;
+              display: flexbox;
+            }
+            .box {
+              width:82%;
+              height: 408px;
+              overflow-y: scroll;
+              margin-right: 180px;
+              max-width: 116%
+            }
+            p{
+              margin-left: 15px;
+              margin-right: 10px;
+              font-size: 17px;
+              color:rgb(71, 70, 70);
+            }
+            ::-webkit-scrollbar-track {
+              background-color: #333333;
+          }
+          ::-webkit-scrollbar {
+              width: 6px;
+              background: #333333;
+          }
+          ::-webkit-scrollbar-thumb {
+              background: #FF9932;
+          }
