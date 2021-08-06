@@ -29,18 +29,25 @@ body{
           ul{
             padding:0px!important;
             }
+            @font-face {
+              font-family:'PixelOperator' ;
+              src: url('../source/PixelOperator.ttf')
+              format('OpenType');
+              font-weight: normal;
+              font-style: italic;
+            }
             .container {
               width: 50%;
               margin: 0 auto;
             }
             .form-contact {
               width: 100%;
-              font-family: "Arial", Times, serif;
+              font-family: 'PixelOperator', Times, serif;
             }
             .form-contact-input {
               width: 100%;
-              color: #424251;
-              font-size: 18px;
+              color: #222222;
+              font-size: 25px;
               background-color: white;
               border: 3px solid#FF9933 ;
               -moz-border-radius: 5px;
@@ -51,13 +58,14 @@ body{
               border-bottom: 3px solid orange;
               border-left: 1px solid #FF9933;
               text-indent: 20px;
+              font-family: "PixelOperator", Times, serif;
             }
             .form-contact-textarea {
               width: 100%;
-              color:#0f116b;
-              font-size: 18px;
+              color:#222222;
+              font-size: 20px;
               background-color: white;
-              border: 3px solid #E9E9E9;
+              border: 3px solid #ffffff;
               -moz-border-radius: 5px;
               -webkit-border-radius: 5px;
               border-radius: 5px;
@@ -69,18 +77,18 @@ body{
               padding-top: 16px;
               padding-left: 0;
               padding-right: 0;
-              font-family: "Arial", Times, serif;
+              font-family: "PixelOperator", Times, serif;
             }
             .form-contact-button {
+              font-family: "PixelOperator", Times, serif;
               width: 100%;
-              font-size: 18px;
+              font-size: 20px;
               border-radius: 4px;
-              color: #ffff26;
+              color: #ffffff;
               height: 40px;
-              opacity: .8;
               margin-bottom: 20px;
               cursor: pointer;
-              background: rgb(255, 143, 39);
+              background: #333333;
               display: block;
               border: none;
               border-bottom: 1px solid #500707;
@@ -90,7 +98,6 @@ body{
             .form-contact-button:hover {
               opacity: 1;
             }
-=======
             .logo {
               font-size: 24px;
               text-transform: uppercase;
@@ -181,4 +188,7 @@ body{
             .mobile-menu.active .line3 {
               transform: rotate(45deg) translate(-5px, -7px);
             }
-
+            footer{
+              font-family: 'PixelOperator', Times, serif;
+              color: rgb(104, 103, 103);
+            }
