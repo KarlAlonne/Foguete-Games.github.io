@@ -3,6 +3,7 @@ body{
   height:150%;
   width: 100%;
   margin: 0 auto;
+  background-image: url('../img/1.gif');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -184,7 +185,6 @@ body{
             .mobile-menu.active .line2 {
               opacity: 0;
             }
-            
             .mobile-menu.active .line3 {
               transform: rotate(45deg) translate(-5px, -7px);
             }
@@ -228,4 +228,7 @@ body{
             font-size: 20px;
             margin-left: 32px;
           }
-          
+          b{
+            font-size: 30px;
+            padding: 9%;
+          }
