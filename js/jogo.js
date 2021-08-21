@@ -6,6 +6,32 @@ sprites.src = './sprites.png';
 const canvas = document.querySelector('canvas');
 const contexto = canvas.get('2d');
 
+const planoDeFundo = {
+    spriteX:0,
+    spriteY:0,
+    largura:401,
+    altura:801,
+    x:0,
+    y: canvas.height - 801,
+    desenha () {
+        contexto.drawImage (
+            sprites,
+            planoDeFundo.spriteX, planoDeFundo.spriteY,
+            planoDeFundo.largura, planoDeFundo.altura,
+            planoDeFundo.x, planoDeFundo.y,
+            planoDeFundo.largura, planoDeFundo.altura,
+        ); 
+
+        contexto.drawImage (
+            sprites,
+            planoDeFundo.spriteX, planoDeFundo.spriteY,
+            planoDeFundo.largura, planoDeFundo.altura,
+            (planoDeFundo.x + planoDeFundo.largura), planoDeFundo.y,
+            planoDeFundo.largura, planoDeFundo.altura,
+        ); 
+    }
+}
+
 const chao = {
     spriteX:0,
     spriteY:0,
@@ -53,8 +79,9 @@ const BatAtack = {
     }
 
 function loop() {
-    BatAtack.desenha();
+    planoDeFundo.desenha();
     chao.desenha();
+    BatAtack.desenha();
 
     
     requestAnimationFrame(loop);
