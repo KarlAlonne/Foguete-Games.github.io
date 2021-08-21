@@ -1,12 +1,12 @@
 console.log('[Foguete-games] Bat attack');
 
 const sprites = new Image ();
-sprites.src = './sprites.png';
+sprites.src = './Images';
 
 const canvas = document.querySelector('canvas');
 const contexto = canvas.get('2d');
 
-const planoDeFundo = {
+const fundo3 = {
     spriteX:0,
     spriteY:0,
     largura:401,
@@ -16,18 +16,18 @@ const planoDeFundo = {
     desenha () {
         contexto.drawImage (
             sprites,
-            planoDeFundo.spriteX, planoDeFundo.spriteY,
-            planoDeFundo.largura, planoDeFundo.altura,
-            planoDeFundo.x, planoDeFundo.y,
-            planoDeFundo.largura, planoDeFundo.altura,
+            fundo3.spriteX, fundo3.spriteY,
+            fundo3.largura, fundo3.altura,
+            fundo3.x, fundo3.y,
+            fundo3.largura, fundo3.altura,
         ); 
 
         contexto.drawImage (
             sprites,
-            planoDeFundo.spriteX, planoDeFundo.spriteY,
-            planoDeFundo.largura, planoDeFundo.altura,
-            (planoDeFundo.x + planoDeFundo.largura), planoDeFundo.y,
-            planoDeFundo.largura, planoDeFundo.altura,
+            fundo3.spriteX, fundo3.spriteY,
+            fundo3.largura, fundo3.altura,
+            (fundo3.x + fundo3.largura), fundo3.y,
+            fundo3.largura, fundo3.altura,
         ); 
     }
 }
@@ -60,7 +60,7 @@ const chao = {
 }
 
 
-const BatAtack = {
+const Bat = {
     spriteX:18,
     spriteY:29,
     largura: 75,
@@ -70,19 +70,21 @@ const BatAtack = {
    desenha () {
      contexto.drawImage(
         sprites,
-        BatAtack.spriteX, BatAtack.spriteY,
-        BatAtack.largura, BatAtack.altura,
-        BatAtack.x, BatAtack.y,
-        BatAtack.largura, BatAtack.altura,
+        Bat.spriteX, Bat.spriteY,
+        Bat.largura, Bat.altura,
+        Bat.x, Bat.y,
+        Bat.largura, Bat.altura,
         );
      }
     }
 
 function loop() {
-    planoDeFundo.desenha();
+    fundo3.desenha();
     chao.desenha();
-    BatAtack.desenha();
+    Bat.desenha();
 
     
     requestAnimationFrame(loop);
 }
+
+loop();
