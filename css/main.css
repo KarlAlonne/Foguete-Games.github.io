@@ -232,3 +232,12 @@ body{
             font-size: 30px;
             padding: 9%;
           }
+          .pop-up {
+            margin-left: 18%;
+            margin-right: 60px;
+            max-width: 65%;
+            height:294px;
+            background-image: url('../img/pop-up.png');
+            background-repeat: no-repeat;
+            display: flexbox;
+          }
